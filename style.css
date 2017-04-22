@@ -1,22 +1,251 @@
-* {
-	margin: 0;
-	padding: 0;
-}
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
+
+/*NORMALIZE*/
+
+
+/** {
+    margin: 0;
+    padding: 0;
+}*/
 
 body {
-	background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
 }
 
-.header {
-	background-color: #abeafa;
-	height: 700px;
+
+/*LAYOUT*/
+
+.l-header {
+    background: #abeafa;
+    height: 700px;
+    min-width: 1500px;
+    width: 100%;
 }
 
-.footer {
-	background-color: #373737;
-	height: 348px;
+.l-header-fixed-size {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 1170px;
+    background: #abeafa;
+    margin: 0 auto;
 }
 
-.container {
-	width: 1170px;
+.l-header-fixed-left {
+    position: relative;
+    width: 585px;
+}
+
+.l-header-fixed-right {
+    position: relative;
+    width: 585px;
+}
+
+.l-footer {
+    background: #373737;
+    height: 348px;
+    width: 100%
+}
+
+.l-container {
+    margin: 0 auto;
+    margin-top: -20px;
+    width: 1170px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.l-catalog {
+    padding-left: 300px;
+    width: 870px;
+}
+
+
+/*BLOCKS*/
+
+.surhouse-logo {
+    width: 125px;
+    height: 111px;
+    margin: 24px 0 0 69px;
+}
+
+.social-block-top {
+    text-align: right;
+    margin: 50px 80px 0 0;
+}
+
+.adv-block {
+    box-sizing: border-box;
+    font-family: 'Raleway', serif;
+}
+
+.menu {
+    float: left;
+    height: 475px;
+    width: 270px;
+    background-color: #26d2fc;
+}
+
+.product-block-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-block--new {
+    margin-bottom: 50px;
+}
+
+.product-block--top {
+    margin-bottom: 50px;
+}
+
+.brand-block {
+    width: 100%;
+    height: 160px;
+    background: #fff;
+}
+
+.instagram-feed {
+    width: 100%;
+    height: 350px;
+    background: #eaeaea;
+}
+
+.social-bottom {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 150px;
+}
+
+
+/*ELEMENTS*/
+
+.social-block-top__img {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.product-block__item {
+    background-color: #ffffff;
+    width: 270px;
+    height: 320px;
+    margin-bottom: 30px;
+}
+
+.product-block__header {
+    height: 80px;
+    background: #f9f9f9;
+}
+
+.social-bottom__item {
+    width: 390px;
+    height: 150px;
+}
+
+.adv-block__button {
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Raleway', serif;
+    outline: none;
+}
+
+.adv-block__button:active {
+	margin-top: 3px;
+}
+
+
+/*MODIFICATORS*/
+
+.adv-block--nowisopen {
+    clear: left;
+    float: left;
+}
+
+.adv-block--welcome {
+    position: absolute;
+    width: 270px;
+    height: 300px;
+    background: #fff51f;
+    top: 336px;
+    left: 0;
+    color: #333333;
+    padding: 82px 30px 0 22px;
+}
+
+.adv-block__header--welcome {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+.adv-block__text--welcome {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 14px;
+    font-style: italic;
+}
+
+.adv-block--funride {
+    width: 313px;
+    height: 169px;
+    color: #fff51f;
+    margin: 177px 0 0 163px;
+}
+
+.adv-block__header--funride {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.adv-block__text--funride {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 62px;
+}
+
+.adv-block__button--buy {
+    background-color: #fff51f;
+    width: 124px;
+    height: 49px;
+    text-transform: uppercase;
+    text-align: center;	
+	color:  #000000;
+	font-size: 14px;
+	font-weight: 900;
+	margin-left: 3px;
+}
+
+.product-block-wrapper--new {
+    height: 670px;
+    margin-bottom: 18px;
+}
+
+.social-bottom__item--facebook {
+    background: #3b5997;
+}
+
+.social-bottom__item--twitter {
+    background: #3fccfd;
+}
+
+.social-bottom__item--pinterest {
+    background: #cb2027;
+}
+
+
+
+
+/* HACK */
+
+@media (max-width: 1500px) {
+    .l-container {
+        margin: -20px 165px 0 165px;
+    }
 }
