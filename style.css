@@ -18,21 +18,26 @@ body {
 .l-header {
     background: #abeafa;
     height: 700px;
-    width: 100%
+    min-width: 1500px;
+    width: 100%;
 }
 
 .l-header-fixed-size {
-	width: 1500px;
+	display: flex;
+	flex-flow: row nowrap;
+	width: 1170px;
+	background: #abeafa;
+	margin: 0 auto;
 }
 
 .l-header-fixed-left {
 	position: relative;
-	width: 750px;
+	width: 585px;
 }
 
 .l-header-fixed-right {
 	position: relative;
-	width: 750px;
+	width: 585px;
 }
 
 .l-footer {
@@ -56,6 +61,25 @@ body {
 
 /*BLOCKS*/
 
+.surhouse-logo {
+	width: 125px;
+	height: 111px;
+	margin: 24px 0 0 69px;
+}
+
+.adv-block__text--welcome {
+	position: absolute;
+	width: 270px;
+	height: 300px;
+	background: #fff51f;
+	top: 336px;
+	left: 0;
+}
+
+.social-block-top {
+	text-align: right;
+	margin: 50px 80px 0 0;
+}
 .menu {
     float: left;
     height: 475px;
@@ -100,6 +124,11 @@ body {
 
 /*ELEMENTS*/
 
+.social-block-top__img {
+	display: inline-block;
+	margin-right: 12px;
+}
+
 .product-block__item {
     background-color: #ffffff;
     width: 270px;
@@ -120,7 +149,7 @@ body {
 
 /*MODIFICATORS*/
 
-.adv-block--grey {
+.adv-block--nowisopen {
     clear: left;
     float: left;
 }
@@ -143,14 +172,12 @@ body {
 }
 
 
-/*.prod-block3,
-.prod-block6,
-.prod-block9,
-.prod-block12 {
-	margin: 0 0 30px 0;
-}*/
 
 
-/*.block-white:nth-child(3n+1) {
-	margin: 0 0 30px 0;
+/* HACK */
+
+@media (max-width: 1500px) {
+	.l-container {
+		margin: 0 165px;
+	}
 }
