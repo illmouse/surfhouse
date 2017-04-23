@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,700i,800,900|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,700i,800,900|Roboto:400,700,900,900i');
 
 /*NORMALIZE*/
 
@@ -129,15 +129,35 @@ body {
 }
 
 .product-block__item {
+	box-sizing: border-box;
     background-color: #ffffff;
     width: 270px;
     height: 320px;
     margin-bottom: 30px;
+    padding: 10px;
 }
 
 .product-block__header {
     height: 80px;
     background: #f9f9f9;
+}
+
+.product-block__text {
+    font-family: 'Roboto', serif;
+    color: #707070;
+    font-size: 22px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 80px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.product-block__preview {
+	background: #eaeaea;
+	width: 250px;
+	height: 235px;
 }
 
 .social-bottom__item {
@@ -153,7 +173,7 @@ body {
 }
 
 .adv-block__button:active {
-	margin-top: 3px;
+    margin-top: 3px;
 }
 
 
@@ -216,11 +236,11 @@ body {
     width: 124px;
     height: 49px;
     text-transform: uppercase;
-    text-align: center;	
-	color: #000000;
-	font-size: 12px;
-	font-weight: 900;
-	margin-left: 3px;
+    text-align: center;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 900;
+    margin-left: 3px;
 }
 
 .product-block-wrapper--new {
@@ -239,8 +259,6 @@ body {
 .social-bottom__item--pinterest {
     background: #cb2027;
 }
-
-
 
 
 /* HACK */
