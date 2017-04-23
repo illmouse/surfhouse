@@ -12,6 +12,7 @@ body {
     margin: 0;
     padding: 0;
     background: #f9f9f9;
+    width: 100%;
 }
 
 
@@ -45,7 +46,8 @@ body {
 .l-footer {
     background: #373737;
     height: 348px;
-    width: 100%
+    min-width: 1500px;
+    width: 100%;
 }
 
 .l-container {
@@ -129,8 +131,11 @@ body {
 }
 
 .product-block__item {
-	box-sizing: border-box;
+    box-sizing: border-box;
     background-color: #ffffff;
+    font-family: 'Roboto', serif;
+    font-weight: 900;
+    color: #333333;
     width: 270px;
     height: 320px;
     margin-bottom: 30px;
@@ -142,7 +147,7 @@ body {
     background: #f9f9f9;
 }
 
-.product-block__text {
+.product-block__header-text {
     font-family: 'Roboto', serif;
     color: #707070;
     font-size: 22px;
@@ -155,9 +160,38 @@ body {
 }
 
 .product-block__preview {
-	background: #eaeaea;
-	width: 250px;
-	height: 235px;
+    background: #eaeaea;
+    width: 250px;
+    height: 235px;
+}
+
+.product-block__bottom-wrapper {
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+}
+
+.product-block__title {
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: start;
+}
+
+.product-block__price {
+    margin-top: 27px;
+    font-size: 18px;
+    text-align: right;
+}
+
+.product-block__discount {
+	align-self: flex-end;
+	color: #e24602;
+	font-size: 14px;
+	text-align: right;
+	margin-left: auto;
+	text-decoration: line-through;
 }
 
 .social-bottom__item {
@@ -246,6 +280,10 @@ body {
 .product-block-wrapper--new {
     height: 670px;
     margin-bottom: 18px;
+}
+
+.product-block__item--uppercase {
+    text-transform: uppercase;
 }
 
 .social-bottom__item--facebook {
