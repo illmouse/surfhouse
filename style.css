@@ -69,6 +69,9 @@ body {
 
 /*BLOCKS*/
 
+
+/*BLOCKS --- HEADER*/
+
 .surhouse-logo {
     width: 125px;
     height: 111px;
@@ -83,6 +86,9 @@ body {
 .adv-block {
     font-family: 'Raleway', serif;
 }
+
+
+/*BLOCKS --- MENU*/
 
 .menu {
     /*	position: relative;*/
@@ -108,12 +114,15 @@ body {
 }
 
 .menu-lvl3 {
-	display: none;
-	position: absolute;
-	background: #75e3fe;
-	color: #333333;
-	list-style: square;
+    display: none;
+    position: absolute;
+    background: #75e3fe;
+    color: #333333;
+    list-style: square;
 }
+
+
+/*BLOCKS --- CONTAINER*/
 
 .product-block-wrapper {
     display: flex;
@@ -156,10 +165,22 @@ body {
 
 /*ELEMENTS*/
 
+
+/*ELEMENTS --- HEADER*/
+
+.adv-block__button {
+    border: none;
+    font-family: 'Raleway', serif;
+    outline: none;
+}
+
 .social-block-top__img {
     display: inline-block;
     margin-right: 12px;
 }
+
+
+/*ELEMENTS --- MENU*/
 
 .menu__list {
     margin-top: 15px;
@@ -199,6 +220,9 @@ body {
     margin-bottom: 30px;
     padding: 10px;
 }
+
+
+/*ELEMENTS --- CONTAINER*/
 
 .product-block__header {
     height: 80px;
@@ -260,12 +284,6 @@ body {
     height: 150px;
 }
 
-.adv-block__button {
-    border: none;
-    font-family: 'Raleway', serif;
-    outline: none;
-}
-
 .instagram-feed__text-block {
     display: flex;
     flex-flow: row nowrap;
@@ -293,7 +311,13 @@ body {
 }
 
 
+/*ELEMENTS --- FOOTER*/
+
+
 /*MODIFICATORS*/
+
+
+/*MODIFICATORS --- HEADER*/
 
 .adv-block--nowisopen {
     background: #e0e0e0;
@@ -372,6 +396,13 @@ body {
     margin-left: 3px;
 }
 
+.adv-block__button:active {
+    margin-top: 3px;
+}
+
+
+/*MODIFICATORS --- MENU*/
+
 .menu-lvl2--item4 {
     width: 155px;
     height: 162px;
@@ -381,12 +412,34 @@ body {
 }
 
 .menu-lvl3--item3 {
-	width: 165px;
-	height: 80px;
+    width: 165px;
+    height: 80px;
     padding: 0 0 0 30px;
     top: 76px;
     right: -165px;
 }
+
+.menu__item:hover {
+    background: #333333;
+    color: #fff;
+}
+
+.menu__item--4:hover .menu-lvl2--item4 {
+    display: block;
+}
+
+.menu-lvl2__item:hover:after {
+    float: right;
+    margin-right: 13px;
+    content: url(img/arrow.png);
+}
+
+.menu-lvl2__item--3:hover .menu-lvl3--item3 {
+    display: block;
+}
+
+
+/*MODIFICATORS --- CONTAINER*/
 
 .product-block-wrapper--new {
     height: 670px;
@@ -412,29 +465,6 @@ body {
 .instagram-feed__text--bold {
     font-size: 22px;
     margin-right: 5px;
-}
-
-.adv-block__button:active {
-    margin-top: 3px;
-}
-
-.menu__item:hover {
-    background: #333333;
-    color: #fff;
-}
-
-.menu__item--4:hover .menu-lvl2--item4 {
-    display: block;
-}
-
-.menu-lvl2__item:hover:after {
-    float: right;
-    margin-right: 13px;
-    content: url(img/arrow.png);
-}
-
-.menu-lvl2__item--3:hover .menu-lvl3--item3 {
-    display: block;
 }
 
 
