@@ -85,11 +85,25 @@ body {
 }
 
 .menu {
+/*	position: relative;*/
+	display: flex;
+	flex-flow: column nowrap;
     float: left;
     height: 475px;
     width: 270px;
+    margin-bottom: 30px;
     background-color: #26d2fc;
+	font-family: 'Roboto', serif;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
+
+/*.menu-lvl2 {
+	position: absolute;
+	top: 200px;
+	right: -100px;
+}*/
 
 .product-block-wrapper {
     display: flex;
@@ -135,6 +149,31 @@ body {
 .social-block-top__img {
     display: inline-block;
     margin-right: 12px;
+}
+
+.menu__list {
+	margin-top: 15px;
+}
+
+.menu__header {
+	background: #333333;
+	width: 270px;
+	height: 66px;
+	padding-left: 40px;
+	color:  #fff;
+	line-height: 66px;
+	vertical-align: middle;
+}
+
+.menu__item {
+	padding-left: 40px;
+	line-height: 35px;
+	vertical-align: middle;
+}
+
+.menu__link {
+	color: #333333;
+	text-decoration: none;
 }
 
 .product-block__item {
@@ -214,10 +253,6 @@ body {
     outline: none;
 }
 
-.adv-block__button:active {
-    margin-top: 3px;
-}
-
 .instagram-feed__text-block {
     display: flex;
     flex-flow: row nowrap;
@@ -247,8 +282,21 @@ body {
 /*MODIFICATORS*/
 
 .adv-block--nowisopen {
+	background: #e0e0e0;
+	width: 270px;
+	height: 300px;
     clear: left;
     float: left;
+}
+
+.adv-block__text--nowisopen {
+	color: #333333;
+	font-size: 36px;
+	font-weight: 800;
+	font-style: italic;
+	margin: 129px 0 0 142px;
+	text-align: left;
+	text-transform: uppercase;
 }
 
 .adv-block--welcome {
@@ -336,6 +384,15 @@ body {
     margin-right: 5px;
 }
 
+
+.adv-block__button:active {
+    margin-top: 3px;
+}
+
+.menu__item:hover {
+	background: #333333;
+	color: #fff;
+}
 
 /* HACK */
 
