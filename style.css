@@ -233,11 +233,12 @@ body {
     position: relative;
     padding-left: 40px;
     line-height: 35px;
+    color: #333333;
     vertical-align: middle;
 }
 
 .menu__link {
-    color: #333333;
+    color: inherit;
     text-decoration: none;
 }
 
