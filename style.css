@@ -458,7 +458,7 @@ body {
 }
 
 
-.footer-narrow_social {
+.footer-narrow__social {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
@@ -550,6 +550,9 @@ body {
     margin-top: 3px;
 }
 
+.social-block-top__img:hover {
+    filter: invert(.8);
+}
 
 /*MODIFICATORS --- MENU*/
 
@@ -655,6 +658,10 @@ body {
 
 .footer-block__wrapper--news {
     padding: 0 8px 0 8px;
+}
+
+.footer-narrow__item:hover {
+    filter: invert(.5);
 }
 
 
