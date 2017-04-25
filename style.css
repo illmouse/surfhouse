@@ -214,7 +214,7 @@ body {
 /*ELEMENTS --- MENU*/
 
 .menu__list {
-    margin-top: 15px;
+    margin-top: 0;
     list-style: none;
     padding: 0;
 }
@@ -233,11 +233,12 @@ body {
     position: relative;
     padding-left: 40px;
     line-height: 35px;
+    color: #333333;
     vertical-align: middle;
 }
 
 .menu__link {
-    color: #333333;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -457,7 +458,7 @@ body {
 }
 
 
-.footer-narrow_social {
+.footer-narrow__social {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
@@ -549,6 +550,9 @@ body {
     margin-top: 3px;
 }
 
+.social-block-top__img:hover {
+    filter: invert(.8);
+}
 
 /*MODIFICATORS --- MENU*/
 
@@ -654,6 +658,10 @@ body {
 
 .footer-block__wrapper--news {
     padding: 0 8px 0 8px;
+}
+
+.footer-narrow__item:hover {
+    filter: invert(.5);
 }
 
 
