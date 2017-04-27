@@ -69,9 +69,11 @@ body {
 }
 
 .l-contacts {
+	position: relative;
     padding-left: 300px;
     min-width: 870px;
-    height: 826px;
+    min-height: 800px;
+    margin-bottom: 123px;
 }
 
 /*BLOCKS*/
@@ -647,6 +649,9 @@ body {
 }
 
 .brand-block--contacts {
+	position: absolute;
+	bottom: 0;
+	width: 870px;
     padding: 83px 67px;
     clear: none;
 }
