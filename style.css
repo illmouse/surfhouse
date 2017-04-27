@@ -69,12 +69,13 @@ body {
 }
 
 .l-contacts {
-	position: relative;
+    position: relative;
     padding-left: 300px;
     min-width: 870px;
     min-height: 800px;
     margin-bottom: 123px;
 }
+
 
 /*BLOCKS*/
 
@@ -100,7 +101,7 @@ body {
 /*BLOCKS --- MENU*/
 
 .menu {
-    /*	position: relative;*/
+    position: relative;
     display: flex;
     flex-flow: column nowrap;
     float: left;
@@ -112,6 +113,7 @@ body {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
+    z-index: 50;
 }
 
 .menu-lvl2 {
@@ -120,7 +122,6 @@ body {
     background: #75e3fe;
     color: #333333;
     list-style: square;
-    z-index: 5;
 }
 
 .menu-lvl3 {
@@ -329,6 +330,16 @@ body {
     color: #b0b0b0;
     font-size: 36px;
     font-weight: 800;
+}
+
+.feedback-form__input {
+    width: 370px;
+    height: 27px;
+}
+
+.feedback-form__textarea {
+    width: 370px;
+    height: 150px;
 }
 
 .social-bottom__item {
@@ -649,9 +660,9 @@ body {
 }
 
 .brand-block--contacts {
-	position: absolute;
-	bottom: 0;
-	width: 870px;
+    position: absolute;
+    bottom: 0;
+    width: 870px;
     padding: 83px 67px;
     clear: none;
 }
@@ -676,6 +687,7 @@ body {
     font-size: 22px;
     margin-right: 5px;
 }
+
 
 /*MODIFICATORS --- FOOTER*/
 
