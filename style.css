@@ -48,6 +48,13 @@ body {
     width: 585px;
 }
 
+.l-feedback-address {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    padding: 0 11px;
+}
+
 .l-footer {
     position: relative;
     background: #373737;
@@ -74,6 +81,7 @@ body {
     min-width: 870px;
     min-height: 800px;
     margin-bottom: 123px;
+    font-family: 'Roboto', serif;
 }
 
 
@@ -91,6 +99,7 @@ body {
 .social-block-top {
     text-align: right;
     margin: 50px 80px 0 0;
+    background: rgba(193, 193, 193, 0.8);
 }
 
 .adv-block {
@@ -173,6 +182,13 @@ body {
     flex-flow: row nowrap;
     width: 100%;
     height: 150px;
+}
+
+.bread-crumbs {
+    height: 120px;
+    list-style: none;
+    margin: 0;
+    padding-left: 22px;
 }
 
 
@@ -325,21 +341,83 @@ body {
     text-decoration: line-through;
 }
 
-.brand-block__text {
-    font-family: 'Raleway', serif;
-    color: #b0b0b0;
-    font-size: 36px;
-    font-weight: 800;
+.bread-crumbs__item {
+    display: inline;
+}
+
+.bread-crumbs__link {
+    text-decoration: none;
+    color: #989898;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .feedback-form__input {
     width: 370px;
     height: 27px;
+    margin-bottom: 35px;
 }
 
 .feedback-form__textarea {
     width: 370px;
     height: 150px;
+}
+
+.feedback-form__label {
+    color: #333333;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.separator {
+    border-left: 1px solid rgba(167, 167, 167, 0.8);
+    height: 330px;
+    margin: 50px 24px 0 24px;
+}
+
+.address__header {
+    color: #353535;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 14px;
+    margin-bottom: 17px;
+}
+
+.address__street {
+    width: 155px;
+    color: #777777;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-bottom: 22px;
+}
+
+.address__phone {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20.8px;
+    margin-bottom: 19px;
+    padding-left: 8px;
+}
+
+.address__mail {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    padding-left: 8px;
+}
+
+.address__footer {
+    width: 292px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    padding-left: 8px;
 }
 
 .social-bottom__item {
@@ -348,6 +426,13 @@ body {
     justify-content: center;
     width: 390px;
     height: 150px;
+}
+
+.brand-block__text {
+    font-family: 'Raleway', serif;
+    color: #b0b0b0;
+    font-size: 36px;
+    font-weight: 800;
 }
 
 .instagram-feed__text-block {
@@ -659,9 +744,14 @@ body {
     text-transform: uppercase;
 }
 
+.bread-crumbs__link--current {
+    color: #333333;
+    font-weight: 600;
+}
+
 .brand-block--contacts {
-    position: absolute;
-    bottom: 0;
+/*    position: absolute;
+    bottom: 0;*/
     width: 870px;
     padding: 83px 67px;
     clear: none;

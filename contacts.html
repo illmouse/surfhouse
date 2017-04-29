@@ -66,22 +66,43 @@
         </div>
         <div class="l-contacts">
             <ul class="bread-crumbs">
-                <li class="bread-crumbs bread-crumbs__home">Home &raquo;</li>
-                <li class="bread-crumbs bread-crumbs__contact">Contact Us</li>
+                <li class="bread-crumbs__item"><a href="index.html" class="bread-crumbs__link">Home &raquo;</a></li>
+                <li class="bread-crumbs__item"><a href="contacts.html" class="bread-crumbs__link bread-crumbs__link--current">Contact Us</a></li>
             </ul>
-            <form action="post" class="feedback-form">
-                <div class="feedback-form__label"><label for="name">NAME*</label></div>
-                <input id="name" type="name" class="feedback-form__input feedback-form__input--name" placeholder="e.g.  robert smith">
-                <div class="feedback-form__label"><label for="email">EMAIL*</label></div>
-                <input id="email" type="email" class="feedback-form__input feedback-form__input--email" placeholder="e.g. name@nome.com">
-                <div class="feedback-form__label"><label for="company">COMPANY</label></div>
-                <input id="company" type="company" class="feedback-form__input feedback-form__input--company" placeholder="e.g. your company (optional)">
-                <div class="feedback-form__label"><label for="subject">SUBJECT*</label></div>
-                <input id="subject" type="subject" class="feedback-form__input feedback-form__input--subject" placeholder="e.g. info">
-                <div class="feedback-form__label"><label for="message">MESSAGE</label></div>
-                <textarea id="message" class="feedback-form__textarea"></textarea>
-            </form>
-            
+            <div class="l-feedback-address">
+                <div class="feedback-form">
+                    <form action="post">
+                        <div class="feedback-form__label">
+                            <label for="name">FULL NAME*</label>
+                        </div>
+                        <input id="name" type="name" class="feedback-form__input feedback-form__input--name" placeholder="e.g.  robert smith">
+                        <div class="feedback-form__label">
+                            <label for="email">EMAIL*</label>
+                        </div>
+                        <input id="email" type="email" class="feedback-form__input feedback-form__input--email" placeholder="e.g. name@nome.com">
+                        <div class="feedback-form__label">
+                            <label for="company">COMPANY</label>
+                        </div>
+                        <input id="company" type="company" class="feedback-form__input feedback-form__input--company" placeholder="e.g. your company (optional)">
+                        <div class="feedback-form__label">
+                            <label for="subject">SUBJECT*</label>
+                        </div>
+                        <input id="subject" type="subject" class="feedback-form__input feedback-form__input--subject" placeholder="e.g. info">
+                        <div class="feedback-form__label">
+                            <label for="message">MESSAGE</label>
+                        </div>
+                        <textarea id="message" class="feedback-form__textarea"></textarea>
+                    </form>
+                </div>
+                <div class="separator"></div>
+                <div class="address">
+                    <div class="address__header">Address</div>
+                    <div class="address__street">Ut interdum tristique est com modo pharetra.<br>Lorem Ipsum is simply dummy text of the printing and over</div>
+                    <div class="address__phone">1-900-324-9876</div>
+                    <div class="address__mail">info@surfhouse.com</div>
+                    <div class="address__footer">If you have questions about your order or need any general information our customer service team will be happy to assist you.</div>
+                </div>
+            </div>
             <div class="brand-block brand-block--contacts">
                 <div class="brand-block__text">BRAND</div>
                 <div class="brand-block__text">BRAND</div>
