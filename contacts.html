@@ -28,7 +28,7 @@
         </div>
     </div>
     <div class="l-container l-container--contacts">
-        <div class="menu">
+        <div class="menu menu--contacts">
             <div class="menu__header">Menu</div>
             <ul class="menu__list">
                 <li class="menu__item menu__item--1"><a href="#" class="menu__link">about</a></li>
@@ -59,7 +59,7 @@
             </ul>
         </div>
         <div class="adv-block adv-block--nowisopen">
-            <div class="adv-block__text adv-block__text--nowisopen">Now
+            <div class="adv-block__text adv-block__text--nowisopen adv-block__text--contacts">Now
                 <br>is
                 <br>open!
             </div>
@@ -75,29 +75,31 @@
                         <div class="feedback-form__label">
                             <label for="name">FULL NAME*</label>
                         </div>
-                        <input id="name" type="name" class="feedback-form__input feedback-form__input--name" placeholder="e.g.  robert smith">
+                        <input id="name" type="text" class="feedback-form__input feedback-form__input--name" placeholder="e.g.  robert smith">
                         <div class="feedback-form__label">
                             <label for="email">EMAIL*</label>
                         </div>
-                        <input id="email" type="email" class="feedback-form__input feedback-form__input--email" placeholder="e.g. name@nome.com">
+                        <input id="email" type="text" class="feedback-form__input feedback-form__input--email" placeholder="e.g. name@nome.com">
                         <div class="feedback-form__label">
                             <label for="company">COMPANY</label>
                         </div>
-                        <input id="company" type="company" class="feedback-form__input feedback-form__input--company" placeholder="e.g. your company (optional)">
+                        <input id="company" type="text" class="feedback-form__input feedback-form__input--company" placeholder="e.g. your company (optional)">
                         <div class="feedback-form__label">
                             <label for="subject">SUBJECT*</label>
                         </div>
-                        <input id="subject" type="subject" class="feedback-form__input feedback-form__input--subject" placeholder="e.g. info">
+                        <input id="subject" type="text" class="feedback-form__input feedback-form__input--subject" placeholder="e.g. info">
                         <div class="feedback-form__label">
                             <label for="message">MESSAGE</label>
                         </div>
                         <textarea id="message" class="feedback-form__textarea"></textarea>
+                        <input type="submit" class="feedback-form__input feedback-form__input--submit">
                     </form>
                 </div>
                 <div class="separator"></div>
                 <div class="address">
                     <div class="address__header">Address</div>
-                    <div class="address__street">Ut interdum tristique est com modo pharetra.<br>Lorem Ipsum is simply dummy text of the printing and over</div>
+                    <div class="address__street address__street--h">Ut interdum tristique est com modo pharetra.</div>
+                    <div class="address__street address__street--f">Lorem Ipsum is simply dummy text of the printing and over</div>
                     <div class="address__phone">1-900-324-9876</div>
                     <div class="address__mail">info@surfhouse.com</div>
                     <div class="address__footer">If you have questions about your order or need any general information our customer service team will be happy to assist you.</div>
