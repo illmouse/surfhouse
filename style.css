@@ -111,6 +111,17 @@ body {
     font-family: 'Raleway', serif;
 }
 
+.map {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+	width: 100%;
+	min-width: 1500px;
+	height: 350px;
+	filter: grayscale(100%);
+	background-color: grey;
+}
 
 /*BLOCKS --- MENU*/
 
@@ -610,10 +621,10 @@ body {
 /*MODIFICATORS --- HEADER*/
 
 .l-header--contacts {
-    width: 1500px;
+    width: 1500px;	
     height: 350px;
     margin: 0 auto;
-    background-image: url(img/maps.png);
+    background: none;
 }
 
 .l-container--contacts {
