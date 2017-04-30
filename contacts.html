@@ -9,36 +9,27 @@
 </head>
 
 <body>
-    <div class="l-header">
+    <div class="l-header l-header--contacts">
         <div class="l-header-fixed-size">
             <div class="l-header-fixed-left">
                 <div class="surhouse-logo">
                     <a href="index.html"><img src="img/surfhouse_logo.png" alt="Surfhouse"></a>
                 </div>
-                <div class="adv-block adv-block--welcome">
-                    <div class="adv-block__header adv-block__header--welcome">welcome to surfhouse
-                    </div>
-                    <div class="adv-block__text adv-block__text--welcome">The only online store you will ever need for all your windsurfing and kitesurf&shy;ing and SUP needs</div>
-                </div>
             </div>
             <div class="l-header-fixed-right">
-                <div class="social-top">
+                <div class="social-top social-top--contacts">
                     <a class="social-top__link" href="#"><img class="social-top__img social-top__img--facebook" src="img/facebook_icon.png" alt="facebook"></a>
                     <a class="social-top__link" href="#"><img class="social-top__img social-top__img--twitter" src="img/twitter_icon.png" alt="twitter"></a>
                     <a class="social-top__link" href="#"><img class="social-top__img social-top__img--youtube" src="img/youtube_icon.png" alt="youtube"></a>
                     <a class="social-top__link" href="#"><img class="social-top__img social-top__img--pinterest" src="img/pinterest_icon.png" alt="pinterest"></a>
                     <a class="social-top__link" href="#"><img class="social-top__img social-top__img--instagram" src="img/insta_icon.png" alt="instagram"></a>
                 </div>
-                <div class="adv-block adv-block--funride">
-                    <div class="adv-block__header adv-block__header--funride">JP Funride 2014</div>
-                    <div class="adv-block__text adv-block__text--funride">Super easy going freeride boards based on the X-Cite Ride shape con&shy;cept with additional control and super easy jibing.</div>
-                    <button class="adv-block__button adv-block__button--buy">buy now</button>
-                </div>
             </div>
         </div>
+        <div id="map" class="map"></div>
     </div>
-    <div class="l-container">
-        <div class="menu">
+    <div class="l-container l-container--contacts">
+        <div class="menu menu--contacts">
             <div class="menu__header">Menu</div>
             <ul class="menu__list">
                 <li class="menu__item menu__item--1"><a href="#" class="menu__link">about</a></li>
@@ -69,182 +60,60 @@
             </ul>
         </div>
         <div class="adv-block adv-block--nowisopen">
-            <div class="adv-block__text adv-block__text--nowisopen">Now
+            <div class="adv-block__text adv-block__text--nowisopen adv-block__text--contacts">Now
                 <br>is
                 <br>open!
             </div>
         </div>
-        <div class="l-catalog">
-            <div class="product-block product-block--nowisopen">
-                <div class="product-block__header product-block__header--nowisopen">
-                    <div class="product-block__header-text">New products</div>
+        <div class="l-contacts">
+            <ul class="bread-crumbs">
+                <li class="bread-crumbs__item"><a href="index.html" class="bread-crumbs__link">Home &raquo;</a></li>
+                <li class="bread-crumbs__item"><a href="contacts.html" class="bread-crumbs__link bread-crumbs__link--current">Contact Us</a></li>
+            </ul>
+            <div class="l-feedback-address">
+                <div class="feedback-form">
+                    <form action="post">
+                        <div class="feedback-form__label">
+                            <label for="name">FULL NAME*</label>
+                        </div>
+                        <input id="name" type="text" class="feedback-form__input feedback-form__input--name" placeholder="e.g.  robert smith">
+                        <div class="feedback-form__label">
+                            <label for="email">EMAIL*</label>
+                        </div>
+                        <input id="email" type="text" class="feedback-form__input feedback-form__input--email" placeholder="e.g. name@nome.com">
+                        <div class="feedback-form__label">
+                            <label for="company">COMPANY</label>
+                        </div>
+                        <input id="company" type="text" class="feedback-form__input feedback-form__input--company" placeholder="e.g. your company (optional)">
+                        <div class="feedback-form__label">
+                            <label for="subject">SUBJECT*</label>
+                        </div>
+                        <input id="subject" type="text" class="feedback-form__input feedback-form__input--subject" placeholder="e.g. info">
+                        <div class="feedback-form__label">
+                            <label for="message">MESSAGE</label>
+                        </div>
+                        <textarea id="message" class="feedback-form__textarea"></textarea>
+                        <input type="submit" class="feedback-form__input feedback-form__input--submit">
+                    </form>
                 </div>
-                <div class="product-block-wrapper">
-                    <div class="product-block__item product-block__item--1 product-block__item--new">
-                        <a href="#" class="product-block__link">
-                            <div class="product-block__preview"></div>
-                        </a>
-                        <div class="product-block__bottom-wrapper">
-                            <div class="product-block__title">Single Thruster 2014</div>
-                            <div class="product-block__price">€.865.00</div>
-                        </div>
-                    </div>
-                    <div class="product-block__item product-block__item--2 product-block__item--hot">
-                        <a href="#" class="product-block__link">
-                            <div class="product-block__preview"></div>
-                        </a>
-                        <div class="product-block__bottom-wrapper">
-                            <div class="product-block__title">Freestyle Wave FSW</div>
-                            <div class="product-block__price">€.770.50
-                                <div class="product-block__discount">€.1,270.15</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-block__item product-block__item--3">
-                        <a href="#" class="product-block__link">
-                            <div class="product-block__preview"></div>
-                        </a>
-                        <div class="product-block__bottom-wrapper">
-                            <div class="product-block__title">The White Collection
-                                <br>SURFBOARD 2014</div>
-                            <div class="product-block__price">€.1,580.70</div>
-                        </div>
-                    </div>
-                    <div class="product-block__item product-block__item--4 product-block__item--uppercase">
-                        <a href="#" class="product-block__link">
-                            <div class="product-block__preview"></div>
-                        </a>
-                        <div class="product-block__bottom-wrapper">
-                            <div class="product-block__title">OG SCALLOP SOLID</div>
-                            <div class="product-block__price">€.765.00</div>
-                        </div>
-                    </div>
-                    <div class="product-block__item product-block__item--5 product-block__item--uppercase">
-                        <a href="#" class="product-block__link">
-                            <div class="product-block__preview"></div>
-                        </a>
-                        <div class="product-block__bottom-wrapper">
-                            <div class="product-block__title">STRIPE 19 QS</div>
-                            <div class="product-block__price">€.230.50</div>
-                        </div>
-                    </div>
-                    <div class="product-block__item product-block__item--6 product-block__item--uppercase">
-                        <a href="#" class="product-block__link">
-                            <div class="product-block__preview"></div>
-                        </a>
-                        <div class="product-block__bottom-wrapper">
-                            <div class="product-block__title">YOKE 19 QS</div>
-                            <div class="product-block__price">€.1,130.70</div>
-                        </div>
-                    </div>
+                <div class="separator"></div>
+                <div class="address">
+                    <div class="address__header">Address</div>
+                    <div class="address__street address__street--h">Ut interdum tristique est com modo pharetra.</div>
+                    <div class="address__street address__street--f">Lorem Ipsum is simply dummy text of the printing and over</div>
+                    <div class="address__phone">1-900-324-9876</div>
+                    <a href="mailto:info@surfhouse.com">
+                        <div class="address__mail">info@surfhouse.com</div>
+                    </a>
+                    <div class="address__footer">If you have questions about your order or need any general information our customer service team will be happy to assist you.</div>
                 </div>
             </div>
-            <div class="product-block product-block--top">
-                <div class="product-block__header product-block__header--top">
-                    <div class="product-block__header-text">Top products</div>
-                </div>
-                <div class="product-block-wrapper">
-                    <div class="product-block__item product-block__item--7 product-block__item--uppercase">
-                        <a href="#" class="product-block__link">
-                            <div class="product-block__preview"></div>
-                        </a>
-                        <div class="product-block__bottom-wrapper">
-                            <div class="product-block__title">ushingham
-                                <br>Lightning 2014</div>
-                            <div class="product-block__price">€.2,960.95
-                                <div class="product-block__discount">€.3,100.15</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-block__item product-block__item--8 product-block__item--uppercase">
-                        <a href="#" class="product-block__link">
-                            <div class="product-block__preview"></div>
-                        </a>
-                        <div class="product-block__bottom-wrapper">
-                            <div class="product-block__title">CYPHER HEAT VES M</div>
-                            <div class="product-block__price">€.849.95</div>
-                        </div>
-                    </div>
-                    <div class="product-block__item product-block__item--9 product-block__item--uppercase">
-                        <a href="#" class="product-block__link">
-                            <div class="product-block__preview"></div>
-                        </a>
-                        <div class="product-block__bottom-wrapper">
-                            <div class="product-block__title">SYNCRO WOMENS
-                                <br>QS M</div>
-                            <div class="product-block__price">€.1,110.99</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-block product-block--sale">
-                <div class="product-block__header product-block__header--sale">
-                    <div class="product-block__header-text">sale products</div>
-                </div>
-                <div class="product-block-wrapper">
-                    <div class="product-block__item product-block__item--10 product-block__item--uppercase">
-                        <a href="#" class="product-block__link">
-                            <div class="product-block__preview"></div>
-                        </a>
-                        <div class="product-block__bottom-wrapper">
-                            <div class="product-block__title">SYNCRO MENS QS M</div>
-                            <div class="product-block__price">€.249.95
-                                <div class="product-block__discount">$450.15</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-block__item product-block__item--11 product-block__item--uppercase">
-                        <a href="#" class="product-block__link">
-                            <div class="product-block__preview"></div>
-                        </a>
-                        <div class="product-block__bottom-wrapper">
-                            <div class="product-block__title">RAMOS - SHIRT FOR
-                                <br>MEN</div>
-                            <div class="product-block__price">€.459.65
-                                <div class="product-block__discount">€.570.65</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-block__item product-block__item--12 product-block__item--uppercase">
-                        <a href="#" class="product-block__link">
-                            <div class="product-block__preview"></div>
-                        </a>
-                        <div class="product-block__bottom-wrapper">
-                            <div class="product-block__title">SixSixOne Evo Wired
-                                <br>Full Face</div>
-                            <div class="product-block__price">€.240.00
-                                <div class="product-block__discount">€.370.65</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="brand-block">
+            <div class="brand-block brand-block--contacts">
                 <div class="brand-block__text">BRAND</div>
                 <div class="brand-block__text">BRAND</div>
                 <div class="brand-block__text">BRAND</div>
                 <div class="brand-block__text">BRAND</div>
                 <div class="brand-block__text">BRAND</div>
-                <div class="brand-block__text">BRAND</div>
-                <div class="brand-block__text">BRAND</div>
-                <div class="brand-block__text">BRAND</div>
-        </div>
-        <div class="instagram-feed">
-            <div class="instagram-feed__text-block">
-                <div class="instagram-feed__icon">
-                    <img src="img/insta_icon_feed.png" alt="Instagram-ico">
-                </div>
-                <div class="instagram-feed__text instagram-feed__text--bold">Instagram feed:</div>
-                <div class="instagram-feed__text">#surfhouse</div>
-            </div>
-            <div class="instagram-feed__img-feed">
-                <img src="img/Livello25.jpg" alt="Livello25">
-                <img src="img/Livello26.jpg" alt="Livello26">
-                <img src="img/Livello27.jpg" alt="Livello27">
-                <img src="img/Livello28.jpg" alt="Livello28">
-                <img src="img/Livello29.jpg" alt="Livello29">
-                <img src="img/Livello30.jpg" alt="Livello30">
             </div>
         </div>
         <div class="social-bottom">
@@ -341,6 +210,8 @@
             </div>
         </div>
     </div>
+    <script src="script/script.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMhvjgsFQn4O48iUZsKPbGoxPkMiojFH0&callback=initMap"></script>
 </body>
 
 </html>
