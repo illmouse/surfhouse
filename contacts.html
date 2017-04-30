@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Contacts</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
 </head>
 
 <body>
-    <div class="l-header l-header--contacts">
+    <div class="l-header l-header--contacts l-header--lower">
         <div class="l-header-fixed-size">
             <div class="l-header-fixed-left">
                 <div class="surhouse-logo">
@@ -28,12 +28,18 @@
         </div>
         <div id="map" class="map"></div>
     </div>
-    <div class="l-container l-container--contacts">
+    <div class="l-container l-container--lower">
         <div class="menu menu--contacts">
             <div class="menu__header">Menu</div>
             <ul class="menu__list">
                 <li class="menu__item menu__item--1"><a href="#" class="menu__link">about</a></li>
-                <li class="menu__item menu__item--2"><a href="#" class="menu__link">apparel</a></li>
+                <li class="menu__item menu__item--2">
+                    <a href="#" class="menu__link">apparel</a>
+                    <ul class="menu-lvl2 menu-lvl2--item2">
+                        <li class="menu-lvl2__item menu-lvl2__item--1"><a href="apparel/women.html" class="menu__link">Women</a></li>
+                        <li class="menu-lvl2__item menu-lvl2__item--2"><a href="#" class="menu__link">Man</a></li>
+                    </ul>
+                </li>
                 <li class="menu__item menu__item--3">
                     <a href="#" class="menu__link">surf apparel</a>
                     <ul class="menu-lvl2 menu-lvl2--item3">
