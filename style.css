@@ -38,9 +38,9 @@ body {
 }
 
 .l-header-fixed-right {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-end;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
     position: relative;
     width: 585px;
 }
@@ -94,8 +94,8 @@ body {
 }
 
 .social-top {
-	width: 200px;
-	height: 35px;
+    width: 200px;
+    height: 35px;
     text-align: left;
     padding: 10px 0 10px 24px;
     margin: 50px 80px 0 0;
@@ -106,16 +106,17 @@ body {
 }
 
 .map {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -100;
-	width: 100%;
-	min-width: 1500px;
-	height: 350px;
-	filter: grayscale(100%);
-	background-color: grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    width: 100%;
+    min-width: 1500px;
+    height: 350px;
+    filter: grayscale(100%);
+    background-color: grey;
 }
+
 
 /*BLOCKS --- MENU*/
 
@@ -201,8 +202,9 @@ body {
 }
 
 .feedback-form {
-	width: 370px;
+    width: 370px;
 }
+
 
 /*BLOCKS --- CONTAINER*/
 
@@ -376,7 +378,7 @@ body {
     resize: none;
 }
 
-.feedback-form__label {	
+.feedback-form__label {
     color: #333333;
     font-size: 12px;
     font-weight: 600;
@@ -614,7 +616,7 @@ body {
 /*MODIFICATORS --- HEADER*/
 
 .l-header--contacts {
-    width: 1500px;	
+    width: 1500px;
     height: 350px;
     margin: 0 auto;
     background: none;
@@ -700,11 +702,27 @@ body {
 }
 
 .social-top--contacts {
-	background: rgba(193, 193, 193, 0.8);
+    background: rgba(193, 193, 193, 0.8);
 }
 
 
 /*MODIFICATORS --- MENU*/
+
+.menu-lvl2--item2 {
+    width: 155px;
+    height: 80px;
+    padding: 4px 0 0 30px;
+    top: 0;
+    right: -155px;
+}
+
+.menu-lvl2--item3 {
+    width: 155px;
+    height: 162px;
+    padding: 10px 0 0 30px;
+    top: 0;
+    right: -155px;
+}
 
 .menu-lvl2--item4 {
     width: 155px;
@@ -725,6 +743,14 @@ body {
 .menu__item:hover {
     background: #333333;
     color: #fff;
+}
+
+.menu__item--2:hover .menu-lvl2--item2 {
+    display: block;
+}
+
+.menu__item--3:hover .menu-lvl2--item3 {
+    display: block;
 }
 
 .menu__item--4:hover .menu-lvl2--item4 {
@@ -841,7 +867,7 @@ body {
 }
 
 .feedback-form__input--submit:active {
-	margin-top: 3px;
+    margin-top: 3px;
 }
 
 
