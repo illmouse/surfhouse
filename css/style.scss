@@ -63,7 +63,7 @@ $fnt-raleway: 'Raleway', serif;
 }
 
 .l-header-fixed-right {
-    @include flex-row-nowrap;
+    @include flex-row-wrap;
     justify-content: flex-end;
     position: relative;
     width: 585px;
@@ -124,7 +124,7 @@ $fnt-raleway: 'Raleway', serif;
     width: 200px;
     height: 35px;
     padding: 10px 0 10px 24px;
-    margin: 50px 80px 0 0;
+    margin: 50px 63px 0 0;
 }
 
 .adv-block {
@@ -797,6 +797,7 @@ $fnt-raleway: 'Raleway', serif;
     height: 169px;
     color: #fff51f;
     margin-top: 167px;
+    margin-right: 108px;
 }
 
 .adv-block__header--funride {
