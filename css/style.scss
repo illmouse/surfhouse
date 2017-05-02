@@ -15,19 +15,44 @@ body {
     box-sizing: border-box;
 }
 
+// Varibales
+
+$bg-header: #abeafa;
+$bg-body: rgba(0, 0, 0, 0);
+$fnt-roboto: 'Roboto', serif;
+$fnt-raleway: 'Raleway', serif;
+
+@mixin flex-row-wrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@mixin flex-row-nowrap {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+@mixin flex-column-wrap {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+@mixin flex-column-nowrap {
+    display: flex;
+    flex-flow: column nowrap;
+}
 
 /*LAYOUT*/
 
 .l-header {
-    background: #abeafa;
+    background: $bg-header;
     height: 700px;
     min-width: 1500px;
     width: 100%;
 }
 
 .l-header-fixed-size {
-    display: flex;
-    flex-flow: row nowrap;
+    @include flex-row-nowrap;
     width: 1170px;
     margin: 0 auto;
 }
@@ -38,16 +63,14 @@ body {
 }
 
 .l-header-fixed-right {
-    display: flex;
-    flex-flow: row wrap;
+    @include flex-row-nowrap;
     justify-content: flex-end;
     position: relative;
     width: 585px;
 }
 
 .l-feedback-address {
-    display: flex;
-    flex-flow: row nowrap;
+    @include flex-row-nowrap;
     justify-content: flex-start;
     padding: 0 11px;
 }
@@ -64,13 +87,13 @@ body {
     margin: 0 auto;
     margin-top: -20px;
     width: 1170px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: $bg-body;
 }
 
 .l-catalog {
     padding-left: 300px;
     min-width: 870px;
-    font-family: 'Roboto', serif;
+    font-family: $fnt-roboto;
 }
 
 .l-contacts {
@@ -79,7 +102,7 @@ body {
     min-width: 870px;
     min-height: 826px;
     margin-bottom: 123px;
-    font-family: 'Roboto', serif;
+    font-family: $fnt-roboto;
 }
 
 
@@ -95,8 +118,7 @@ body {
 }
 
 .social-top {
-    display: flex;
-    flex-flow: row nowrap;
+    @include flex-row-nowrap;
     justify-content: flex-start;
     align-items: center;
     width: 200px;
@@ -106,7 +128,7 @@ body {
 }
 
 .adv-block {
-    font-family: 'Raleway', serif;
+    font-family: $fnt-raleway;
 }
 
 .map {
@@ -126,14 +148,13 @@ body {
 
 .menu {
     position: relative;
-    display: flex;
-    flex-flow: column nowrap;
+    @include flex-column-nowrap;
     float: left;
     height: 475px;
     width: 270px;
     margin-bottom: 30px;
     background-color: #26d2fc;
-    font-family: 'Roboto', serif;
+    font-family: $fnt-roboto;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -160,8 +181,7 @@ body {
 /*BLOCKS --- CONTAINER*/
 
 .product-block-wrapper {
-    display: flex;
-    flex-flow: row wrap;
+    @include flex-row-wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -192,8 +212,7 @@ body {
 }
 
 .social-bottom {
-    display: flex;
-    flex-flow: row nowrap;
+    @include flex-row-nowrap;
     width: 100%;
     height: 150px;
 }
@@ -223,10 +242,9 @@ body {
 /*BLOCKS --- FOOTER*/
 
 .footer-content {
-    display: flex;
-    flex-flow: row nowrap;
+    @include flex-row-nowrap;
     justify-content: space-around;
-    font-family: 'Roboto', serif;
+    font-family: $fnt-roboto;
     font-size: 12px;
     font-weight: 400;
     padding-top: 75px;
@@ -247,7 +265,7 @@ body {
 
 .adv-block__button {
     border: none;
-    font-family: 'Raleway', serif;
+    font-family: $fnt-raleway;
     outline: none;
 }
 
@@ -339,8 +357,7 @@ body {
 }
 
 .product-block__bottom-wrapper {
-    display: flex;
-    flex-flow: row wrap;
+    @include flex-row-wrap;
     justify-content: space-between;
     margin: 0 10px 0 10px;
 }
@@ -451,8 +468,7 @@ body {
 }
 
 .product-detail-wrapper {
-    display: flex;
-    flex-flow: row nowrap;
+    @include flex-row-nowrap;
     justify-content: space-between;
     padding: 0 10px;
 }
@@ -512,9 +528,8 @@ body {
 }
 
 .product-thmb {
+    @include flex-row-nowrap;
     width: 370px;
-    display: flex;
-    flex-flow: row nowrap;
     justify-content: space-around;
     padding: 24px 50px 42px 50px;
 }
@@ -577,18 +592,17 @@ body {
 }
 
 .brand-block__text {
-    font-family: 'Raleway', serif;
+    font-family: $fnt-raleway;
     color: #b0b0b0;
     font-size: 36px;
     font-weight: 800;
 }
 
 .instagram-feed__text-block {
-    display: flex;
-    flex-flow: row nowrap;
+    @include flex-row-nowrap;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto', serif;
+    font-family: $fnt-roboto;
     color: #333333;
     font-weight: 900;
     font-style: italic;
@@ -603,8 +617,7 @@ body {
 }
 
 .instagram-feed__img-feed {
-    display: flex;
-    flex-flow: row nowrap;
+    @include flex-row-nowrap;
     justify-content: space-between;
     margin-top: 25px;
 }
@@ -613,7 +626,7 @@ body {
 /*ELEMENTS --- FOOTER*/
 
 .footer-block__header {
-    font-family: 'Raleway', serif;
+    font-family: $fnt-raleway;
     color: #fff;
     font-size: 18px;
     font-weight: 700;
@@ -634,8 +647,7 @@ body {
 }
 
 .footer-block__paymethods {
-    display: flex;
-    flex-flow: row nowrap;
+    @include flex-row-nowrap;
     justify-content: space-between;
 }
 
@@ -714,8 +726,7 @@ body {
 }
 
 .footer-narrow__wrapper {
-    display: flex;
-    flex-flow: row nowrap;
+    @include flex-row-nowrap;
     justify-content: space-between;
     align-items: center;
     align-content: center;
@@ -726,7 +737,7 @@ body {
 }
 
 .footer-narrow__copyright {
-    font-family: 'Roboto', serif;
+    font-family: $fnt-roboto;
     color: #dad9d9;
     font-size: 12px;
     font-weight: 400;
@@ -734,8 +745,7 @@ body {
 }
 
 .footer-narrow__social {
-    display: flex;
-    flex-flow: row nowrap;
+    @include flex-row-nowrap;
     justify-content: space-between;
     width: 180px;
 }
