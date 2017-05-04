@@ -16,12 +16,15 @@ body {
 }
 
 // Varibales
-
 $bg-header: #abeafa;
-$bg-body: rgba(0, 0, 0, 0);
-$fnt-roboto: 'Roboto', serif;
-$fnt-raleway: 'Raleway', serif;
-
+$bg-body: rgba(0,
+0,
+0,
+0);
+$fnt-roboto: 'Roboto',
+serif;
+$fnt-raleway: 'Raleway',
+serif;
 @mixin flex-row-wrap {
     display: flex;
     flex-flow: row wrap;
@@ -41,6 +44,7 @@ $fnt-raleway: 'Raleway', serif;
     display: flex;
     flex-flow: column nowrap;
 }
+
 
 /*LAYOUT*/
 
@@ -936,6 +940,8 @@ $fnt-raleway: 'Raleway', serif;
 .adv-block--nowisopen-detail {
     margin-top: 30px;
 }
+
+
 /*MODIFICATORS --- CONTAINER*/
 
 .l-container--lower {
@@ -1064,6 +1070,56 @@ $fnt-raleway: 'Raleway', serif;
     margin-top: 23px;
 }
 
+.product-block__item--new:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid red;
+    border-left: 50px solid transparent;
+}
+
+.product-block__item--new:after {
+    content: "NEW";
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.product-block__item--hot:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid yellow;
+    border-left: 50px solid transparent;
+}
+
+.product-block__item--hot:after {
+    content: "HOT";
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    color: #000000;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.social-bottom__item--rotate {
+    transition: all .7s ease-out;
+}
+
+.social-bottom__item--rotate:hover {
+    transform: scale(1) rotate(180deg);
+}
+
 
 /*MODIFICATORS --- FOOTER*/
 
@@ -1113,48 +1169,6 @@ $fnt-raleway: 'Raleway', serif;
 
 .footer-block__list-item:hover {
     color: #fff51f;
-}
-
-.product-block__item--new:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-top: 50px solid red;
-    border-left: 50px solid transparent;
-}
-
-.product-block__item--new:after {
-    content: "NEW";
-    position: absolute;
-    top: 7px;
-    right: 7px;
-    color: #ffffff;
-    font-size: 9px;
-    font-weight: 600;
-}
-
-.product-block__item--hot:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-top: 50px solid yellow;
-    border-left: 50px solid transparent;
-}
-
-.product-block__item--hot:after {
-    content: "HOT";
-    position: absolute;
-    top: 7px;
-    right: 7px;
-    color: #000000;
-    font-size: 9px;
-    font-weight: 600;
 }
 
 
