@@ -903,7 +903,7 @@ s
 .menu-lvl2__item:hover:after {
     float: right;
     margin-right: 13px;
-    content: url(img/arrow.png);
+    content: url(../img/arrow.png);
 }
 
 .menu-lvl2__item--3:hover .menu-lvl3--item3 {
@@ -1017,21 +1017,21 @@ s
     position: absolute;
     left: 0;
     top: 3px;
-    content: url(img/point.png);
+    content: url(../img/point.png);
 }
 
 .address__phone:before {
     position: absolute;
     left: 0;
     top: 0;
-    content: url(img/phone.png);
+    content: url(../img/phone.png);
 }
 
 .address__mail:before {
     position: absolute;
     left: 0;
     top: 0;
-    content: url(img/mail.png);
+    content: url(../img/mail.png);
 }
 
 .feedback-form__input--submit {
