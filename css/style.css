@@ -280,7 +280,7 @@ body {
 
 .product-block__bottom-wrapper {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   margin: 0 10px 0 10px; }
 
@@ -288,7 +288,8 @@ body {
   margin-top: 25px;
   font-size: 14px;
   line-height: 18px;
-  text-align: start; }
+  text-align: start;
+  max-width: 155px; }
 
 .product-block__price {
   margin-top: 27px;

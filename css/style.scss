@@ -369,7 +369,7 @@ serif;
 }
 
 .product-block__bottom-wrapper {
-    @include flex-row-wrap;
+    @include flex-row-nowrap;
     justify-content: space-between;
     margin: 0 10px 0 10px;
 }
@@ -379,7 +379,7 @@ serif;
     font-size: 14px;
     line-height: 18px;
     text-align: start;
-    // max-width: 125px;
+    max-width: 155px;
 }
 
 .product-block__price {
